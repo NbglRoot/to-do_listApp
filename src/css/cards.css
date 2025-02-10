@@ -1,0 +1,154 @@
+html {
+  color-scheme: dark light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  min-height: 80vh;
+  min-width: 100vw;
+}
+h2 {
+  margin: 3.5rem;
+  text-align: center;
+}
+
+/* index.php */
+
+/* header */
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #fff;
+  top: 0;
+  background-color: #303030;
+  height: 8%;
+  padding-inline: 34px;
+  justify-content: space-between;
+}
+.hader_nav_link {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  background-color: #232323;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(211, 211, 211, 0.507);
+  transition: background-color ease-in-out 150ms;
+}
+.hader_nav_link a {
+  color: #fff;
+  transition: color ease-in 150ms;
+}
+.hader_nav_link a:hover {
+  color: lightblue;
+}
+
+/* github link */
+#gitgubNRootLink {
+  background-color: #232323;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(211, 211, 211, 0.507);
+  transition: background-color ease-in-out 150ms, transform ease-in-out 100ms,
+    opacity ease-in 50ms;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+#gitgubNRootLink:hover {
+  background-color: #303030;
+  transform: scale(1.1);
+  opacity: 1;
+}
+#gitgubNRootLink:hover.ownerApp {
+  color: red;
+}
+.ico {
+  width: 24px;
+  aspect-ratio: 1 / 1;
+}
+
+/* cards */
+.task-list {
+  width: 50%;
+  margin: 15rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+.task-list form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards {
+  width: max-content;
+  background-color: #303030;
+  padding: 24px 32px;
+  border-radius: 16px;
+  border: 1px solid #404040;
+  box-shadow: 0 5px 10px 0 #808080be;
+  height: max-content;
+}
+.btn {
+  margin: 2rem auto 0;
+  display: block;
+  text-align: center;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  border-top: 1px dashed rgba(211, 211, 211, 0.616);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5%;
+  width: 100vw;
+  bottom: 0;
+}
+
+/* media query mobile start */
+
+/* header */
+@media only screen and (max-width: 40em) {
+  header {
+    left: 0;
+    right: 0;
+    margin: 5rem auto;
+    width: max-content;
+  }
+}
+
+.create_link {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  padding: 12px 32px;
+  border-radius: 16px;
+  border: 1px solid #404040;
+  margin: 5rem;
+  transition: color ease-in 150ms;
+}
+.create_link:hover {
+  color: lightblue;
+}
+
+/* footer */
+
+@media screen and (orientation: portrait) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+/* media query mobile end */

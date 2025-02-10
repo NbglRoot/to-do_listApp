@@ -1,0 +1,15 @@
+{
+  "name": "to-do_listapp",
+  "version": "1.0.0",
+  "description": "to-do app with html,css,js,ts,sql,php",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naim Babanaceur García de Lara",
+  "license": "MIT",
+  "dependencies": {
+    "@materializecss/materialize": "^2.2.1",
+    "normalize.css": "^8.0.1"
+  }
+}

@@ -1,0 +1,37 @@
+/* section log-in */
+.log_in {
+  display: grid;
+  text-align: center;
+  background-color: rgba(211, 211, 211, 0.288);
+  padding: 2rem;
+  border: 1px solid rgba(211, 211, 211, 0.304);
+  border-radius: 16px;
+  box-shadow: 0 10px 10px 0 black;
+}
+
+/* login register form */
+.login__form > * {
+  margin: 2.5rem auto;
+}
+#first_name,
+#password {
+  border-radius: 10px;
+  transition: border-radius ease-in-out 150ms, border-bottom ease-in-out 100ms;
+}
+#first_name:hover,
+#password:hover {
+  border-bottom: 3.5px solid lightblue;
+  border-radius: 8px;
+}
+#error_input_username,
+#error_input_password,
+#error_input_email {
+  width: max-content;
+  text-align: left;
+}
+
+/* logoff */
+.logoff {
+  padding: 6px 16px;
+  background-color: rgba(211, 211, 211, 0.322);
+}
